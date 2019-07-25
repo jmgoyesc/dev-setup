@@ -12,8 +12,8 @@ echo "This script requires pip and virtualenvwrapper to be installed."
 echo "See the pydata.sh script."
 
 echo "------------------------------"
-echo "Source virtualenvwrapper from ~/.extra"
-source ~/.extra
+echo "Source virtualenvwrapper from ~/dev/dev-setup/.extra"
+source ~/dev/dev-setup/.extra
 
 ###############################################################################
 # Python 2 Virtual Enviroment                                                 #
