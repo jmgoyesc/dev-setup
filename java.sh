@@ -19,7 +19,8 @@ fi
 brew update
 
 brew cask install --appdir="~/Applications" java
-brew cask install --appdir="~/Applications" intellij-idea-ce
+# IntelliJ IDEA Ultimate Edition
+brew cask install --appdir="~/Applications" intellij-idea
 
 # Install maven
 brew install maven
