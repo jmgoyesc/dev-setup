@@ -104,6 +104,14 @@ function runDots() {
             echo ""
             ./web.sh
         fi
+        if [ $ARG == "shell" ] || [ $ARG == "all" ]; then
+            # Run the shell.sh Script
+            echo "------------------------------"
+            echo "Setting up Shell Files in HOME."
+            echo "------------------------------"
+            echo ""
+            ./shell.sh
+        fi
     done
 
     echo "------------------------------"
