@@ -168,6 +168,9 @@ brew cask install --appdir="/Applications" 1password
 # docker for mac os
 brew cask install --appdir="/Applications" docker
 
+# slack
+brew cask install --appdir="/Applications" slack
+
 #Remove comment to install LaTeX distribution MacTeX
 #brew cask install --appdir="/Applications" mactex
 
