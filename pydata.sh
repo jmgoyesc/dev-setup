@@ -104,6 +104,9 @@ echo "Installing IPython Notebook Default Profile"
 mkdir -p ~/.ipython
 cp -r init/profile_default/ ~/.ipython/profile_default
 
+# Install jq
+brew install jq
+
 echo "------------------------------"
 echo "Script completed."
 echo "Usage: workon py2-data for Python2"
