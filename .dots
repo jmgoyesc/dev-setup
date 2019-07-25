@@ -11,6 +11,7 @@ function runDots() {
     for ARG in "$@"
     do
         if [ $ARG == "bootstrap" ] || [ $ARG == "all" ]; then
+            echo " Using version from jmgoyesc "
             echo ""
             echo "------------------------------"
             echo "Syncing the dev-setup repo to your local machine."
