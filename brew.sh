@@ -135,6 +135,9 @@ brew link libxslt --force
 # brew install heroku/brew/heroku
 # heroku update
 
+# Install terraform
+brew install terraform
+
 # Visula studio code
 brew tap caskroom/cask 
 brew search visual-studio-code
