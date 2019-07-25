@@ -54,7 +54,6 @@ brew install wget
 # Install Python
 brew install python
 brew install python3
-brew reinstall python
 
 # Install ruby-build and rbenv
 brew install ruby-build
@@ -128,7 +127,6 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 brew install pkg-config libffi
-brew reinstall pkg-config
 brew install pandoc
 
 # Lxml and Libxslt
