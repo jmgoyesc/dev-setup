@@ -19,7 +19,7 @@ fi
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 # Install GNU core utilities (those that come with OS X are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
@@ -42,8 +42,8 @@ sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
 # Change to the new shell, prompts for password
 chsh -s /usr/local/bin/bash
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
+# Install `wget`
+brew install wget
 
 # Install RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
@@ -54,6 +54,7 @@ brew install wget --with-iri
 # Install Python
 brew install python
 brew install python3
+brew reinstall python
 
 # Install ruby-build and rbenv
 brew install ruby-build
@@ -61,8 +62,12 @@ brew install rbenv
 LINE='eval "$(rbenv init -)"'
 grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
+# Install vim
+brew install vim
+sudo chown -R `whoami`:admin /usr/local/share/man/de/man1
+brew link vim
+
 # Install more recent versions of some OS X tools.
-brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
@@ -109,7 +114,7 @@ brew install git-lfs
 brew install git-flow
 brew install git-extras
 brew install hub
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install lua
 brew install lynx
 brew install p7zip
@@ -123,6 +128,7 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 brew install pkg-config libffi
+brew reinstall pkg-config
 brew install pandoc
 
 # Lxml and Libxslt
@@ -153,7 +159,7 @@ brew cask install --appdir="~/Applications" xquartz
 # Development tool casks
 # brew cask install --appdir="/Applications" sublime-text
 # brew cask install --appdir="/Applications" atom
-brew cask install --appdir="/Applications" virtualbox
+brew cask install virtualbox
 # brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" macdown
 
