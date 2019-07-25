@@ -27,9 +27,9 @@ pip install virtualenv
 pip install virtualenvwrapper
 
 echo "------------------------------"
-echo "Source virtualenvwrapper from ~/.extra"
+echo "Source virtualenvwrapper from ~/dev/dev-setup/.extra"
 
-EXTRA_PATH=~/.extra
+EXTRA_PATH=~/dev/dev-setup/.extra
 echo $EXTRA_PATH
 echo "" >> $EXTRA_PATH
 echo "" >> $EXTRA_PATH
