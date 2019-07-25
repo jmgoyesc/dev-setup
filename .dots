@@ -64,6 +64,14 @@ function runDots() {
             echo ""
             ./java.sh
         fi
+        if [ $ARG == "go" ] || [ $ARG == "all" ]; then
+            # Run the go.sh Script
+            echo "------------------------------"
+            echo "Setting up Go development environment."
+            echo "------------------------------"
+            echo ""
+            ./go.sh
+        fi
         if [ $ARG == "pydata" ] || [ $ARG == "all" ]; then
             # Run the pydata.sh Script
             echo "------------------------------"
