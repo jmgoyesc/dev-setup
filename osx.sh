@@ -103,16 +103,16 @@ defaults write com.apple.helpviewer DevMode -bool true
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Restart automatically if the computer freezes
-sudo systemsetup -setrestartfreeze on
+# sudo systemsetup -setrestartfreeze on
 
 # Never go into computer sleep mode
-sudo systemsetup -setcomputersleep Off > /dev/null
+# sudo systemsetup -setcomputersleep Off > /dev/null
 
 # Set the computer to sleep after 60 minutes
 #sudo systemsetup -setcomputersleep 60
 
 # Check for software updates daily, not just once per week
-defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+# defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 # Disable Notification Center and remove the menu bar icon
 launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
@@ -135,17 +135,17 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 ###############################################################################
 
 # Disable local Time Machine snapshots
-sudo tmutil disablelocal
+#sudo tmutil disablelocal
 
 # Disable hibernation (speeds up entering sleep mode)
-sudo pmset -a hibernatemode 0
+#sudo pmset -a hibernatemode 0
 
 # Remove the sleep image file to save disk space
-sudo rm -f /private/var/vm/sleepimage
+#sudo rm -f /private/var/vm/sleepimage
 # Create a zero-byte file instead…
-sudo touch /private/var/vm/sleepimage
+#sudo touch /private/var/vm/sleepimage
 # …and make sure it can’t be rewritten
-sudo chflags uchg /private/var/vm/sleepimage
+#sudo chflags uchg /private/var/vm/sleepimage
 
 # Disable the sudden motion sensor as it’s not useful for SSDs
 #sudo pmset -a sms 0
@@ -166,7 +166,7 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClic
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
 # Disable “natural” (Lion-style) scrolling
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+# defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
