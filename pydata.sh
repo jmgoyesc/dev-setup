@@ -9,9 +9,8 @@ sudo -K
 echo "------------------------------"
 echo "Setting up pip."
 
-# Install pip
+# Install pip3 - already installed
 #easy_install pip
-python3 -m pip install --upgrade pip
 
 ###############################################################################
 # Virtual Enviroments                                                         #
@@ -23,8 +22,8 @@ echo "Setting up virtual environments."
 # Install virtual environments globally
 # It fails to install virtualenv if PIP_REQUIRE_VIRTUALENV was true
 export PIP_REQUIRE_VIRTUALENV=false
-pip install virtualenv
-pip install virtualenvwrapper
+pip3 install virtualenv
+pip3 install virtualenvwrapper
 
 echo "------------------------------"
 echo "Source virtualenvwrapper from ~/dev/dev-setup/.extra"
