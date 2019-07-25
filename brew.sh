@@ -157,6 +157,7 @@ brew cask install --appdir="/Applications" macdown
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
+brew cask install --appdir="/Applications" opera
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 # brew cask install --appdir="/Applications" dropbox
