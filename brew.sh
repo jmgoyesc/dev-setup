@@ -55,17 +55,6 @@ brew install wget --with-iri
 brew install python
 brew install python3
 
-# Install Go
-mkdir -p ~/dev/go
-export GOPATH=~/dev/go
-export PATH=$PATH:$GOPATH/bin
-brew install go
-
-# GO tools and dep
-brew install dep
-go get golang.org/x/tools/cmd/godoc
-go get github.com/golang/lint/golint
-
 # Install ruby-build and rbenv
 brew install ruby-build
 brew install rbenv
