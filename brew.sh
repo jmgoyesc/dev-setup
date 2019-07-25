@@ -132,8 +132,14 @@ brew link libxml2 --force
 brew link libxslt --force
 
 # Install Heroku
-brew install heroku/brew/heroku
-heroku update
+# brew install heroku/brew/heroku
+# heroku update
+
+# Visula studio code
+brew tap caskroom/cask 
+brew search visual-studio-code
+brew cask info visual-studio-code
+brew cask install --appdir="/Applications" visual-studio-code
 
 # Core casks
 brew cask install --appdir="/Applications" alfred
@@ -158,7 +164,9 @@ brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" 1password
 #brew cask install --appdir="/Applications" gimp
 #brew cask install --appdir="/Applications" inkscape
-brew cask install docker
+
+# docker for mac os
+brew cask install --appdir="/Applications" docker
 
 #Remove comment to install LaTeX distribution MacTeX
 #brew cask install --appdir="/Applications" mactex
