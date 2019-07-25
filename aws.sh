@@ -36,7 +36,7 @@ pip install saws
 #pip install s3cmd  # Python 2 only
 
 # Uncomment if you want to hook up the aws cli autocomplete for Python 3
-EXTRA_PATH=~/.extra
+EXTRA_PATH=~/dev/dev-setup/.extra
 echo $EXTRA_PATH
 echo "" >> $EXTRA_PATH
 echo "" >> $EXTRA_PATH
