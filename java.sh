@@ -21,5 +21,8 @@ brew update
 brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" intellij-idea-ce
 
+# Install maven
+brew install maven
+
 # Remove outdated versions from the cellar.
 brew cleanup
