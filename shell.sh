@@ -19,6 +19,9 @@ function doIt() {
     cp .screenrc ~/.
     cp .vimrc ~/.
     cp .wgetrc ~/.
+	
+	# Vim preferences
+	cp -r .vim ~/.vim
     
     source ~/.bash_profile;
 }
