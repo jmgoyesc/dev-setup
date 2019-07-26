@@ -60,7 +60,7 @@ defaults write com.apple.screencapture type -string "png"
 defaults write com.apple.screencapture disable-shadow -bool true
 
 # Send screnshots to clipboard
-default write com.apple.screencapture target -string "clipboard"
+default write com.apple.screencapture target clipboard
 
 ###############################################################################
 # Finder                                                                      #
