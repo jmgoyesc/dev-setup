@@ -62,6 +62,14 @@ defaults write com.apple.screencapture disable-shadow -bool true
 # Send screnshots to clipboard
 defaults write com.apple.screencapture target clipboard
 
+# Show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent YES
+
+# Show clock with date and seconds
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d. MMM  HH:mm:ss"
+defaults write com.apple.menuextra.clock FlashDateSeparators -bool false
+defaults write com.apple.menuextra.clock IsAnalog -bool false
+
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
