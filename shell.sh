@@ -14,6 +14,11 @@ function doIt() {
     cp .exports ~/.
     cp .aliases ~/.
     cp .functions ~/.
+	cp .curlrc ~/.
+	cp .inputrc ~/.
+	cp .screenrc ~/.
+	cp .vimrc ~/.
+	cp .wgetrc ~/.
     
     source ~/.bash_profile;
 }
