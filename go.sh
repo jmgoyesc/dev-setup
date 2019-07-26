@@ -20,8 +20,6 @@ brew update
 
 # Install Go
 mkdir -p ~/dev/go
-export GOPATH=~/dev/go
-export PATH=$PATH:$GOPATH/bin
 brew install go
 
 # GO tools and dep
