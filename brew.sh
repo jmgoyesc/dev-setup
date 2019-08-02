@@ -193,7 +193,7 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 brew install azure-cli
 
 # Install postman
-brew cask install postman
+brew cask install --appdir="/Applications" postman
 
 # Remove outdated versions from the cellar.
 brew cleanup
