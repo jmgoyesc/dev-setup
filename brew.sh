@@ -189,5 +189,8 @@ brew cask install --appdir="/Applications" slack
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 
+# Install azure cli - https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest
+brew install azure-cli
+
 # Remove outdated versions from the cellar.
 brew cleanup
