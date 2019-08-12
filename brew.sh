@@ -191,6 +191,7 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 
 # Install azure cli - https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest
 brew install azure-cli
+brew cask install microsoft-azure-storage-explorer
 
 # Install postman
 brew cask install --appdir="/Applications" postman
