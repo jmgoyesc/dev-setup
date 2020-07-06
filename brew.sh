@@ -35,6 +35,8 @@ brew install gnu-sed
 # Install Bash 4.
 brew install bash
 brew install bash-completion2
+# install watch (refershing script)
+brew install watch
 # We installed the new shell, now we have to activate it
 echo "Adding the newly installed shell to the list of allowed shells"
 # Prompts for password
